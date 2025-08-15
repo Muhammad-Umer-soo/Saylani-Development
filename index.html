@@ -1,28 +1,98 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Class First</title>
+    <title>Document</title>
   </head>
   <body>
-    <h3>Muhamad Umer</h3>
-    <p><b>Web Development Student</b></p>
-    <hr />
-    <h3>About me</h3>
-    <p>Hello! My name is <b>Muhamad Umer</b> <br /></p>
-    <p>I am learnin <i>HTML</i><u> and basic Web development</u></p>
-    <p>I love <mark>coding</mark></p>
-    <p>My favorite subject is <small>Computer science</small></p>
-    <hr />
-    <h3>Education</h3>
-    <p>I passed Matriculation in 2022 and Intermediate in 2024</p>
-    <p>Chemical formula Example: H<sub>2</sub>O</p>
-    <p>Maths Example:10<sup>2</sup></p>
-    <hr />
-    <h3>Hobbies</h3>
-    <p>I like <b>Playing Football.</b></p>
-    <p>I enjoy <i>Watching Movies</i> and <u>Learning New Skills</u></p>
-    <hr />
-    <p><small>Thank you for visiting my CV!</small></p>
+    <main style="padding-left: 40px">
+      <h1 id="1">My Portfolio Website</h1>
+      <img src="./image.jpeg" alt="" height="150px" width="100px" /><br />
+      <a href="#1">Home</a>
+      <a href="#about">About</a>
+      <a href="#skill">Skill</a>
+      <a href="#project">Project</a>
+      <a href="#contact">Contact</a><br />
+      <section id="about">
+        <h3><u>ABOUT ME</u></h3>
+        <p>Hello! My name is <b>Muhammad Umer</b></p>
+        <p>I am learning <i>html</i></p>
+        <u
+          ><p>
+            This is my personal portfolio website as part of an Assignment
+          </p></u
+        >
+      </section>
+      <section>
+        <table border="1" id="skill">
+          <tr>
+            <th>Skill</th>
+            <th>Level</th>
+            <th>Notes</th>
+          </tr>
+          <tr>
+            <td>Html</td>
+            <td>Advance</td>
+            <td>Semantic tags, forms, media</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Intermediate</td>
+            <td>Layout, responsive design</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Beginner</td>
+            <td>DOM manipulation</td>
+          </tr>
+        </table>
+      </section>
+      <section id="project">
+        <h3>Projects</h3>
+        <ol>
+          <b><li>Order list example:</li></b
+          ><br />
+          <ol>
+            <li>Website using HTML tags</li>
+            <li>Image galary project</li>
+            <li>Feedback from project</li>
+          </ol>
+          <br />
+          <b><li>Unordered list example:</li></b>
+          <ul>
+            <li>Responsive design</li>
+            <li>Mobile Friendly Layout</li>
+            <li>SEO-friendly</li>
+          </ul>
+          <b><li>Descriptive List Example:</li></b
+          ><br />
+          <dl>
+            <dt>Website using HTML tags</dt>
+            <dd>A simple site to practice all HTML basics</dd>
+            <dt>Iamge galary project</dt>
+            <dd>Display Image with Captions</dd>
+            <dt>FeedBack form project</dt>
+            <dd>Collect feedback via form</dd>
+          </dl>
+        </ol>
+      </section>
+      <form action="" id="contact" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" /><br /><br />
+        <label for="Email">Email:</label>
+        <input type="email" name="email" id="" /><br /><br />
+        <label for="message">message:</label>
+        <input type="text" name="feedback" id="" /><br /><br />
+        <label for="">City:</label>
+        <input type="radio" name="City" />Hyderabd
+        <input type="radio" name="City" />Karachi
+        <input type="radio" name="City" />Lahore <br /><br />
+        <label for="">Skill:</label>
+        <input type="checkbox" />Html <input type="checkbox" />CSS
+        <input type="checkbox" />JavaScript <br /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
   </body>
 </html>
